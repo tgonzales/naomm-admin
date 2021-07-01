@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "strapi-provider-upload-do": "^3.5.4"
+  }
+}
