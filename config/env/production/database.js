@@ -19,6 +19,15 @@ module.exports = ({ env }) => ({
       },
       options: {
         useNullAsDefault: true,
+        pool: { 
+          min: 2, 
+          max: 15, 
+          // I saw an issue here telling to set this property to false
+          propagateCreateError: false, 
+          idleTimeoutMillis: 30000, 
+          createTimeoutMillis: 30000, 
+          acquireTimeoutMillis: 30000
+        }, 
       },
     },
   },
