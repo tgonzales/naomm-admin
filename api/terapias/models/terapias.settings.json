@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "terapias",
+  "info": {
+    "name": "terapias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "terapias"
+    },
+    "categorias": {
+      "via": "terapias",
+      "collection": "categorias"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}
