@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "terapeutas",
+  "info": {
+    "name": "terapeutas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "richtext"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
+    },
+    "terapias": {
+      "collection": "terapias",
+      "via": "terapeutas"
+    }
+  }
+}

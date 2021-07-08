@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/terapeutas",
+      "handler": "terapeutas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/terapeutas/count",
+      "handler": "terapeutas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/terapeutas/:id",
+      "handler": "terapeutas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/terapeutas",
+      "handler": "terapeutas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/terapeutas/:id",
+      "handler": "terapeutas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/terapeutas/:id",
+      "handler": "terapeutas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

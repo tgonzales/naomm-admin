@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agenda_items",
+  "info": {
+    "name": "agendamento",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pessoa": {
+      "model": "pessoas"
+    },
+    "terapeuta": {
+      "model": "terapeutas"
+    },
+    "terapia": {
+      "model": "terapias"
+    },
+    "date_in": {
+      "type": "datetime"
+    },
+    "date_out": {
+      "type": "datetime"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}

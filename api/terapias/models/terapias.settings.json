@@ -33,6 +33,10 @@
     },
     "price": {
       "type": "string"
+    },
+    "terapeutas": {
+      "via": "terapias",
+      "model": "terapeutas"
     }
   }
 }
